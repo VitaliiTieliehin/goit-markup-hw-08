@@ -1,0 +1,90 @@
+.content{
+    @media screen and (min-width: 1200px) {
+    width: 696px;
+    }
+}
+.hero{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align:center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero/hero-mobile1x.jpg);
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution:2dppx) {
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+        ),
+    url(../images/hero/hero-mobile2x.jpg);
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-top: 118px;
+        padding-bottom: 118px;
+        height: 400px;
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero/hero-tablet1x.jpg);
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution:2dppx) {
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+            ),
+            url(../images/hero/hero-tablet2x.jpg);
+        }
+    }
+    @media screen and (min-width: 1199px) {
+        min-height: 600px;
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero/hero.jpg);
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution:2dppx) {
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+            ),
+            url(../images/hero/hero2x.jpg);
+        }
+        
+    }
+    @media screen and (min-width: 1200px) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+}
+
+.hero__title{
+    margin-bottom: 30px;
+    color:var(--primeri-white-color);
+    @include font(26px, 1.62, 900, 0.06em);
+    text-transform: uppercase;   
+    margin-left: auto;
+    margin-right: auto;
+    
+    @media screen and (min-width: 1200px) {
+        font-size: 44px;
+        line-height: 1.36;
+    }
+}
+
+.hero__button{
+    display: inline-block;
+    min-width: 200px;
+    text-align: center;
+    &:hover,
+    &:focus{
+    background-color: #0f5996;}
+}
+
+
+
+

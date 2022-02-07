@@ -1,0 +1,19 @@
+html{box-sizing: border-box;}
+*,
+*::before,
+*::after {
+    box-sizing:inherit;
+}
+body{
+    background-color: var(--primeri-white-color);
+    color: var(--text-color);
+    font-family: Roboto, sans-serif;
+}
+.list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.link{
+    list-style: none;
+}

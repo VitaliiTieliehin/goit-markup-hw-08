@@ -1,0 +1,77 @@
+.subscribe{
+    @media screen and(max-width:1199px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        margin: 0 auto;
+    }
+    @media screen and(min-width:1199px) {
+        width: 570px;
+        margin-left: 93px;
+        
+    }
+}
+.subscribe-list{
+    @media screen and(min-width:1199px){
+        display: flex;
+        align-items: center;
+    
+    }
+    
+}
+.subscribe__title{
+    @include font(14px, 1.14, 700, 0.03em);
+    text-transform: uppercase;
+    color: var(--primeri-white-color);
+    margin-bottom: 20px;
+    @media screen and(min-width:1200px) {
+        text-align: start;
+
+        
+    }
+
+}
+.subscribe__input{
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: transparent;
+    border-radius: 4px;
+    @include font (16px, 1.25, 400, 0.03em);
+
+    @media screen and(min-width:480px) {
+        width: 450px;
+    }
+    @media screen and(min-width:1200px) {
+        width: 358px;
+        display: flex;
+        height: 50px;
+        
+    }
+
+    
+    padding: 15px 16px;
+    color: var(--primeri-white-color);
+    &::placeholder{
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+.subscribe__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 63px;
+    @media screen and(min-width:1200px) {
+        margin-left: 12px;
+    }
+    
+    margin: 20px auto;
+    &:hover,
+    &:focus{
+    background-color: #0f5996;}
+}
+
+.subscribe__modal-icon{ 
+    margin-left: 10px;
+    fill: var(--primeri-white-color);
+}

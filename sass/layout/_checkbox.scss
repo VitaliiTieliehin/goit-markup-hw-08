@@ -1,0 +1,29 @@
+.modal-form-comment__label-text{
+    font-size: 12px;
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+    & span{
+        width: 16px;
+        height: 15px;
+        border-radius: 2px;
+        border: 2px solid var(--title-text-color);
+        margin-right: 7px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.modal-form-comment__icon-chek{
+    fill: var(--primeri-white-color);
+}
+.modal-form-comment__input-check:checked + .modal-form-comment__label-text span{
+background-color: var(--akcen-color-button);
+border: none;
+}
+.modal-form-comment__chek-link-text{
+    text-decoration: underline;
+    color: var(--akcen-color-button);
+}
