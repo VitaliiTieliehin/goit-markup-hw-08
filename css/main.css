@@ -3,6 +3,10 @@ body {
   padding: 0;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0;
@@ -289,6 +293,10 @@ body {
 }
 
 .mob-nav__item:hover, .mob-nav__item:focus {
+  color: var(--akcent-color);
+}
+
+.mob-nav__item.current {
   color: var(--akcent-color);
 }
 
@@ -1060,6 +1068,12 @@ body {
   transform: translateY(0);
 }
 
+@media screen and (max-width: 480px) {
+  .card-set__card:hover .card-thumb__card-comment, .card-set__card:focus .card-thumb__card-comment {
+    overflow-y: scroll;
+  }
+}
+
 .card-content {
   flex-grow: 1;
 }
@@ -1111,6 +1125,7 @@ body {
 }
 
 .backdrop {
+  overflow-y: scroll;
   position: fixed;
   top: 0;
   left: 0;
@@ -1132,15 +1147,28 @@ body {
 
 .modal {
   position: absolute;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transforn 250ms var(--cubic-bezier);
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  width: 100%;
   background-color: #fff;
   border-radius: 4px;
   padding: 40px;
-  transform: translate(-50%, -50%) scale(1);
-  transition: transforn 250ms var(--cubic-bezier);
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+
+@media screen and (min-width: 1199px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .btn-close {
@@ -1208,7 +1236,6 @@ body {
   line-height: 1.17;
   font-weight: 400;
   letter-spacing: 0.01em;
-  color: var(--text-color);
 }
 
 .modal-form-comment__comment-input {
@@ -1286,11 +1313,8 @@ body {
   justify-content: center;
 }
 
-.modal-form-comment__label-text span:focus {
-  border-color: var(--akcen-color-button);
-}
-
-.modal-form-comment__label-text span:focus, .modal-form-comment__label-text :hover {
+.modal-form-comment__label-text span:focus,
+.modal-form-comment__label-text span:hover {
   border-color: var(--akcen-color-button);
 }
 

@@ -13,11 +13,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        &:focus{
-            border-color: var(--akcen-color-button);
-        }
     }
-    & span:focus,:hover{
+    & span:focus,
+    & span:hover{
         border-color: var(--akcen-color-button);
     }
     

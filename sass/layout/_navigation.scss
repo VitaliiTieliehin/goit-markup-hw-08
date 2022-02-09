@@ -121,6 +121,9 @@ margin-left: 93px;
     &:focus{
     color: var(--akcent-color);}
 }
+.mob-nav__item.current{
+    color: var(--akcent-color);
+}
 .mob-contact{
     padding-left: 40px;
     margin-bottom: 64px;
