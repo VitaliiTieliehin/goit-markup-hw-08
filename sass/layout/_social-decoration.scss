@@ -58,19 +58,6 @@
 }
 
 .social-subscribe{
-    padding-top: 60px;
-    @media screen and(min-width:768px) {
-        margin-top: 0;
-        margin-right: 89px;
-        margin-left: auto;
-
-    }
-    @media screen and(min-width:1200px) {
-            display: flex;
-            flex-direction: column;
-            margin-left: 70px;
-            margin-right: 0;
-
-        
-    }
+    margin-left: 70px;
+    
 }

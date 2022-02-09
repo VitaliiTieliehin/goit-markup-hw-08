@@ -1,12 +1,10 @@
 .subscribe{
+    margin-left: 93px;
     @media screen and(max-width:1199px) {
-        padding-top: 60px;
-        padding-bottom: 60px;
         margin: 0 auto;
     }
     @media screen and(min-width:1199px) {
-        width: 570px;
-        margin-left: 93px;
+        // width: 570px;
         
     }
 }
@@ -25,8 +23,6 @@
     margin-bottom: 20px;
     @media screen and(min-width:1200px) {
         text-align: start;
-
-        
     }
 
 }
@@ -45,10 +41,8 @@
         width: 358px;
         display: flex;
         height: 50px;
-        
     }
 
-    
     padding: 15px 16px;
     color: var(--primeri-white-color);
     &::placeholder{
@@ -60,12 +54,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 63px;
+    width: 200px;
     @media screen and(min-width:1200px) {
         margin-left: 12px;
     }
-    
-    margin: 20px auto;
     &:hover,
     &:focus{
     background-color: #0f5996;}

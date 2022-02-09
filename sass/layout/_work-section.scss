@@ -1,4 +1,9 @@
 .work{
+    @media screen and(min-width:1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+        display: block;
+    }
     @media screen and (max-width: 1199px) {
         display: none;
     }
