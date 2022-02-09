@@ -1,5 +1,7 @@
 .logo{
     margin-left: 15px;
+    padding-top: 24px;
+    padding-bottom: 24px;
     color:var(--akcent-color);
     font-family: Raleway,sans-serif;
     @include font(24px, 1.17, 700, 0.03em); 

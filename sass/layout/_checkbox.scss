@@ -13,7 +13,14 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        &:focus{
+            border-color: var(--akcen-color-button);
+        }
     }
+    & span:focus,:hover{
+        border-color: var(--akcen-color-button);
+    }
+    
 }
 
 .modal-form-comment__icon-chek{
@@ -22,6 +29,7 @@
 .modal-form-comment__input-check:checked + .modal-form-comment__label-text span{
 background-color: var(--akcen-color-button);
 border: none;
+
 }
 .modal-form-comment__chek-link-text{
     text-decoration: underline;

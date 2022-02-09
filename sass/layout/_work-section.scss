@@ -19,7 +19,8 @@
 }
 .work-list__comment{
     @include font(14px, 1.14, 700, 0.03em);
-    text-align: center;
+    display: flex;
+    align-items: center;
     text-transform: uppercase;
     color: #FFFFFF;
     padding: 27px 82px; 

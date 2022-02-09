@@ -109,7 +109,7 @@ cursor: pointer;
 .modal-form-field__input-icon{
     position: relative;
 }
-.modal-form-field__modal-input:focus{
+.modal-form-field__modal-input:focus, :hover{
     border-color: var(--akcent-color);
     +.modal-form-field__input-svg{
         fill: var(--akcent-color);
