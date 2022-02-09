@@ -1,11 +1,11 @@
 .work{
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
     @media screen and(min-width:1200px) {
         padding-top: 94px;
         padding-bottom: 94px;
         display: block;
-    }
-    @media screen and (max-width: 1199px) {
-        display: none;
     }
 }
 
@@ -24,17 +24,18 @@
 }
 .work-list__comment{
     @include font(14px, 1.14, 700, 0.03em);
-    display: flex;
-    align-items: center;
     text-transform: uppercase;
-    color: #FFFFFF;
-    padding: 27px 82px; 
+    color: #FFFFFF; 
 
 }
 .work-list__text{
     position: absolute;
     bottom: 0;  
     background-color: rgba(47, 48, 58, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
     width: 370px;
 }
 .work-list__example +.work-list__example{

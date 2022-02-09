@@ -1,10 +1,15 @@
 .subscribe{
-    margin-left: 93px;
+    @media screen and(max-width:767px) {
+        margin-top: 60px;
+        
+    }
+
     @media screen and(max-width:1199px) {
-        margin: 0 auto;
+        margin: 60px auto 0;
+        
     }
     @media screen and(min-width:1199px) {
-        // width: 570px;
+        margin-left: 93px;
         
     }
 }
@@ -55,9 +60,12 @@
     justify-content: center;
     align-items: center;
     width: 200px;
+    margin: 20px auto 0px;
+    
     @media screen and(min-width:1200px) {
-        margin-left: 12px;
+        margin:0 0 0 12px;
     }
+
     &:hover,
     &:focus{
     background-color: #0f5996;}

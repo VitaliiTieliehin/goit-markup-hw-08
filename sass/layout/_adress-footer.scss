@@ -5,25 +5,23 @@
         flex-wrap: wrap;
         align-items: baseline;
     }
-    @media screen and(min-width:1200px) {
-
-    }
-
 }
 .foot{
     margin-left: 0;
     padding: 0;
 }
 .footer-adress{
-    text-align: start;
-    // @media screen and(min-width:768px) {
-    //     margin-left: 76px;
-    // }
-    // @media screen and(min-width:1200px) {
-    //     margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
-    // }
-    
+    @media screen and(min-width:768px) and(max-width:1199px) {
+        margin-left: 76px;
+    }
+    @media screen and(min-width:1200px) {
+        text-align: start;
+        align-items: inherit;    
+    }   
 }
 .footer__adres-section{
     margin-top: 20px;

@@ -625,17 +625,17 @@ body {
   letter-spacing: 0.03em;
 }
 
+@media screen and (max-width: 1199px) {
+  .work {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .work {
     padding-top: 94px;
     padding-bottom: 94px;
     display: block;
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  .work {
-    display: none;
   }
 }
 
@@ -662,17 +662,18 @@ body {
   line-height: 1.14;
   font-weight: 700;
   letter-spacing: 0.03em;
-  display: flex;
-  align-items: center;
   text-transform: uppercase;
   color: #FFFFFF;
-  padding: 27px 82px;
 }
 
 .work-list__text {
   position: absolute;
   bottom: 0;
   background-color: rgba(47, 48, 58, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
   width: 370px;
 }
 
@@ -915,7 +916,20 @@ body {
 }
 
 .social-subscribe {
-  margin-left: 70px;
+  margin-top: 60px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .social-subscribe {
+    margin: 0 90px 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .social-subscribe {
+    margin-left: 70px;
+    margin-top: 0;
+  }
 }
 
 .filtr-project {
@@ -995,7 +1009,7 @@ body {
 }
 
 .card-set {
-  margin-bottom: -30px;
+  margin-top: -30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1016,7 +1030,7 @@ body {
 }
 
 .card-set__item {
-  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1206,7 +1220,7 @@ body {
   outline: none;
 }
 
-.modal-form-comment__comment-input:focus {
+.modal-form-comment__comment-input:focus, .modal-form-comment__comment-input:hover {
   border-color: var(--akcent-color);
 }
 
@@ -1294,13 +1308,21 @@ body {
   color: var(--akcen-color-button);
 }
 
-.subscribe {
-  margin-left: 93px;
+@media screen and (max-width: 767px) {
+  .subscribe {
+    margin-top: 60px;
+  }
 }
 
 @media screen and (max-width: 1199px) {
   .subscribe {
-    margin: 0 auto;
+    margin: 60px auto 0;
+  }
+}
+
+@media screen and (min-width: 1199px) {
+  .subscribe {
+    margin-left: 93px;
   }
 }
 
@@ -1364,11 +1386,12 @@ body {
   justify-content: center;
   align-items: center;
   width: 200px;
+  margin: 20px auto 0px;
 }
 
 @media screen and (min-width: 1200px) {
   .subscribe__btn {
-    margin-left: 12px;
+    margin: 0 0 0 12px;
   }
 }
 
@@ -1413,7 +1436,22 @@ body {
 }
 
 .footer-adress {
-  text-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-adress {
+    margin-left: 76px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-adress {
+    text-align: start;
+    align-items: inherit;
+  }
 }
 
 .footer__adres-section {
