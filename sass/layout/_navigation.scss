@@ -50,15 +50,26 @@ margin-left: 93px;
 }
 
 
+
+
+.menu-mobile{
+    padding: 48px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    
+
+}
 .menu-open{    
-    z-index: 99;
-    margin-right: 15px;
+    z-index: 10;
     margin-left: auto;
     padding: 12px 8px;
     width: 40px;
     height: 40px;
     border: none;
     background-color: inherit;
+    overflow-y: hidden;
     & .icon-menu-cross{
         display: none;
     }
@@ -82,13 +93,11 @@ margin-left: 93px;
         fill: var(--akcent-color);
     }
 }
-.mob-menu-bottom{
-    margin-top: auto;
-}
+
 .mob-menu{
     z-index: 9;
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100vw;
     height: 100vh;
@@ -96,19 +105,10 @@ margin-left: 93px;
     background-color: #fff;
     &.is-open{
         display: block;
+        @media screen and(min-width:768px) {
+            display: none;
+        }
     }
-    .containers{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 100%;
-            }
-
-}
-.mob-nav{
-    padding-top: 48px;
-    padding-left: 40px;
-
 
 }
 .mob-nav__list:not(:last-child){
@@ -125,13 +125,18 @@ margin-left: 93px;
     color: var(--akcent-color);
 }
 .mob-contact{
-    padding-left: 40px;
+    margin-top: auto;
     margin-bottom: 64px;
+
 }
 .mob-contact__item{
     display: block;
+    @include font(27px, 1.18, 500, 0.02em);
     color: var(--text-color);
-    @include font(34px, 1.18, 500, 0.02em);
+    @media screen and(min-width:480px) {
+        @include font(34px, 1.18, 500, 0.02em);
+    }
+    
     &:hover,
     &:focus{
     color: var(--akcent-color);}
@@ -152,19 +157,23 @@ margin-left: 93px;
 }
 .mob-link{
     display: flex;
-    margin-left: 40px;
-    margin-bottom: 48px;
+    justify-content: space-evenly;
 
 }
 .mob-link-list{
-    @include font( 18px, 1.22, 500, 0.02em);
+    @include font( 15px, 1.22, 500, 0.02em);
     color: var(--text-color);
     &:focus,
     &:hover{
         color: var(--akcent-color);
     }
-&:not(:last-child){
-    margin-right: 20px;
-
+    @media screen and(min-width:480px) {
+        @include font( 18px, 1.22, 500, 0.02em);
+    }
 }
+
+.mob-span{
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #21212133;
 }

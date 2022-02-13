@@ -60,16 +60,17 @@
 .hero__title{
     margin-bottom: 30px;
     color:var(--primeri-white-color);
+    @include font(20px, 1.62, 900, 0.06em);
+
+    @media screen and(min-width:480px) {
     @include font(26px, 1.62, 900, 0.06em);
+    }
     text-transform: uppercase;   
     margin-left: auto;
     margin-right: auto;
     
     @media screen and (min-width: 1200px) {
-        font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
-        letter-spacing: 0.06em;
+        @include font(44px, 1.36, 900, 0.06em);
         max-width: 696px;
     }
 }
