@@ -607,8 +607,7 @@ body {
 }
 
 .team-list__member {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 32px;
   text-align: center;
   border-radius: 0px 0px 4px 4px;
   background-color: #fff;
@@ -728,8 +727,6 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 16px;
-  padding-left: 32px;
-  padding-right: 32px;
 }
 
 .social-team__link + .social-team__link {
@@ -1386,10 +1383,15 @@ body {
   margin-left: auto;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .open-mob-menu {
     display: none;
   }
+}
+
+.open-mob-menu:focus, .open-mob-menu:hover {
+  fill: var(--akcent-color);
+  transition: color 250ms var(--cubic-bezier);
 }
 
 .close-mob-menu {
@@ -1405,6 +1407,11 @@ body {
   fill: inherit;
 }
 
+.close-mob-menu:focus, .close-mob-menu:hover {
+  fill: var(--akcent-color);
+  transition: color 250ms var(--cubic-bezier);
+}
+
 .mobile-menu {
   display: block;
   position: fixed;
@@ -1416,7 +1423,7 @@ body {
   padding: 48px;
 }
 
-.container {
+.mobile-menu .container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1436,6 +1443,16 @@ body {
   margin-top: 32px;
 }
 
+.mobile-menu-item :hover,
+.mobile-menu-item :focus {
+  color: var(--akcent-color);
+  transition: color 250ms var(--cubic-bezier);
+}
+
+.mobile-menu-item.current {
+  color: var(--akcent-color);
+}
+
 .mobile-menu-connect {
   margin-top: -32px;
   margin-bottom: 64px;
@@ -1444,6 +1461,12 @@ body {
 .mob-menu-link {
   color: #757575;
   margin-top: 32px;
+}
+
+.mob-menu-link :hover,
+.mob-menu-link :focus {
+  color: var(--akcent-color);
+  transition: color 250ms var(--cubic-bezier);
 }
 
 .mob-menu-link.tel {
@@ -1470,6 +1493,12 @@ body {
   line-height: 1.22;
   font-weight: 500;
   letter-spacing: 0.02em;
+}
+
+.mobile-menu-social-item :hover,
+.mobile-menu-social-item :focus {
+  color: var(--akcent-color);
+  transition: color 250ms var(--cubic-bezier);
 }
 
 .mob-span {
