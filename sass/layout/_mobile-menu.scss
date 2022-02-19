@@ -2,6 +2,10 @@
     border: none;
     background-color: transparent;
     margin-left: auto;
+    @media screen and(min-width:767px) {
+        display: none;
+        
+    }
 }
 .close-mob-menu{
     display: block;
@@ -26,9 +30,6 @@
     top: 0;
     z-index: 5;
     padding: 48px;
-
-@media screen and(min-width:481px) {
-    display: none;
 }
 .container{
     display: flex;
@@ -36,7 +37,7 @@
     justify-content: space-between;
     height: 100%;
 }
-}
+
 .mobile-menu-list{
     margin-top: -32px;
 }

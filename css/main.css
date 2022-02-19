@@ -1386,6 +1386,12 @@ body {
   margin-left: auto;
 }
 
+@media screen and (min-width: 767px) {
+  .open-mob-menu {
+    display: none;
+  }
+}
+
 .close-mob-menu {
   display: block;
   position: absolute;
@@ -1410,13 +1416,7 @@ body {
   padding: 48px;
 }
 
-@media screen and (min-width: 481px) {
-  .mobile-menu {
-    display: none;
-  }
-}
-
-.mobile-menu .container {
+.container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
