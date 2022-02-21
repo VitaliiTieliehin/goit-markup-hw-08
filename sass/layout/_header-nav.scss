@@ -4,8 +4,8 @@
 }
 .main-nav{
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     height: 60px;
     @media screen and(min-width:768px) {
         height: 80px;
@@ -13,7 +13,7 @@
     }
 }
 .menu-nav{
-display: flex;
+display:block;
 margin-left: 93px;
     .menu-nav__menu-select:not(:last-child){
         margin-right: 50px;}
@@ -30,6 +30,7 @@ margin-left: 93px;
 
 }
 .menu-nav__menu-link{
+    display: block;
     position: relative;
     padding-top: 32px;
     padding-bottom: 32px;

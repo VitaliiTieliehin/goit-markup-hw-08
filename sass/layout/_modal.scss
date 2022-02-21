@@ -95,6 +95,7 @@ cursor: pointer;
 
 }
 .modal-form-comment__comment-text{
+    display: inline-block;
     @include font(12px, 1.17, 400, 0.01em); 
 
 
