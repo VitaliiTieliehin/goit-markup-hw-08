@@ -28,7 +28,6 @@
 
 
 .mobile-menu{
-    display: none;
     position: absolute;
     background-color: #fff;
     width: 100vw;
@@ -37,6 +36,8 @@
     z-index: 5;
     padding: 48px;
     margin-right: 10px;
+    opacity: 0;
+    transition: opacity 250ms linear;
     .container{
         display: flex;
         flex-direction: column;
@@ -46,6 +47,8 @@
     &.is-open{
         display: block;
         margin-right: 10px;
+        opacity: 1;
+        transition: opacity 250ms linear;
         
         @media screen and(min-width:768px) {
             display: none;
