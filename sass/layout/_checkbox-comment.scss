@@ -1,10 +1,20 @@
 .checkbox-label{
-    @include font(14px, 1.71, 400, 0.03em);
-    color: var(--text-color);
+    @include font(12px, 1.17, 400, 0.03em);
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    margin-bottom: 30px;
+    color: var(--text-color);
+    
+
+
+@media screen and(min-width:1200px) {
+    @include font(14px, 1.71, 400, 0.03em);
+    
+    
 }
+}
+
+
 .checkbox-label::before{
     content: '';
     width: 16px;
@@ -18,6 +28,9 @@
 .checkbox-label a{
     color: var(--akcent-color);
     text-decoration: underline;
+    @media screen and(min-width:340px) and(max-width:450px) {
+        margin-left: 23px;
+    }
 }
 .licence-checkbox{
     position: absolute;

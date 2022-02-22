@@ -994,8 +994,7 @@ body {
   display: block;
   min-width: 200px;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 30px auto 0;
 }
 
 .modal-btn:hover, .modal-btn:focus {
@@ -1240,14 +1239,23 @@ body {
 }
 
 .checkbox-label {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   font-weight: 400;
   letter-spacing: 0.03em;
-  color: var(--text-color);
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 30px;
+  color: var(--text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox-label {
+    font-size: 14px;
+    line-height: 1.71;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+  }
 }
 
 .checkbox-label::before {
@@ -1262,6 +1270,12 @@ body {
 .checkbox-label a {
   color: var(--akcent-color);
   text-decoration: underline;
+}
+
+@media screen and (min-width: 340px) and (max-width: 450px) {
+  .checkbox-label a {
+    margin-left: 23px;
+  }
 }
 
 .licence-checkbox {
