@@ -1064,6 +1064,7 @@ body {
   margin-right: 10px;
   opacity: 0;
   transition: opacity 250ms linear;
+  pointer-events: none;
 }
 
 .mobile-menu .container {
@@ -1077,6 +1078,7 @@ body {
   display: block;
   margin-right: 10px;
   opacity: 1;
+  pointer-events: visible;
   transition: opacity 250ms linear;
 }
 
