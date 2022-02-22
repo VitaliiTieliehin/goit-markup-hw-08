@@ -1253,7 +1253,7 @@ body {
 .checkbox-label::before {
   content: '';
   width: 16px;
-  height: 16px;
+  height: 15px;
   border: 1px solid #757575;
   border-radius: 4px;
   margin-right: 7px;
@@ -1278,7 +1278,6 @@ body {
 }
 
 .licence-checkbox:checked + .checkbox-label::before {
-  background-color: var(--akcent-color);
   background-image: url(../../images/icon-check.svg);
   background-repeat: no-repeat;
   background-position: center;
