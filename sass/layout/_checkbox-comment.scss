@@ -32,7 +32,7 @@
     margin: -1px;
     &:checked+.checkbox-label::before{
         background-color: var(--akcent-color);
-        background-image: url(../../images/icon-check.svg);
+        background-image: url('../../images/icon-check.svg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
