@@ -1054,7 +1054,7 @@ body {
 }
 
 .mobile-menu {
-  display: none;
+  visibility: hidden;
   position: absolute;
   background-color: #fff;
   width: 100vw;
@@ -1064,7 +1064,6 @@ body {
   padding: 48px;
   margin-right: 10px;
   opacity: 0;
-  transition: opacity 250ms linear;
 }
 
 .mobile-menu .container {
@@ -1075,10 +1074,11 @@ body {
 }
 
 .mobile-menu.is-open {
-  display: block;
+  visibility: visible;
   margin-right: 10px;
   opacity: 1;
-  transition: opacity 250ms linear;
+  transition: opacity 500ms var(--cubic-bezier);
+  pointer-events: auto;
 }
 
 @media screen and (min-width: 768px) {
