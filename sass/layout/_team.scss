@@ -67,3 +67,30 @@
         width: calc(100% / 4 - 30px);
     }
 }
+
+// social-team
+.social-team{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+.social-team__link +.social-team__link{
+    margin-left: 10px;
+}
+.social-team__social-item{
+    color:  #AFB1B8;
+    transition: background-color 250ms var(--cubic-bezier), fill 250ms var(--cubic-bezier);
+    &:focus,
+    &:hover{
+    background-color: var(--akcent-color);
+    color: var(--primeri-white-color);}
+}
+
+.social-team__icon{
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+
+}
+
+

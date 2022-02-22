@@ -1,6 +1,6 @@
 .menu-button{
     position: relative;
-    z-index: 9;
+    z-index: 10;
     display: inline-flex;
     margin: 0;
     padding: 0;
@@ -36,6 +36,7 @@
     top: 0;  
     z-index: 5;
     padding: 48px;
+    margin-right: 10px;
     .container{
         display: flex;
         flex-direction: column;
@@ -45,6 +46,7 @@
     &.is-open{
         display: block;
         margin-right: 10px;
+        
         @media screen and(min-width:768px) {
             display: none;
         }
