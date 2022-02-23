@@ -1306,11 +1306,12 @@ body {
 }
 
 .checkbox-label::before {
+  display: block;
   content: '';
   width: 16px;
   height: 15px;
   outline: 1px solid #757575;
-  border-radius: 4px;
+  border-radius: 2px;
   margin-right: 7px;
 }
 
@@ -1339,18 +1340,19 @@ body {
 }
 
 .licence-checkbox:checked + .checkbox-label::before {
-  background-image: url(../../images/icon-check.svg);
+  background-color: var(--akcent-color);
+  background-image: url("../../images/check.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 
 .licence-checkbox:focus + .checkbox-label::before {
-  outline: 1px solid var(--akcent-color);
+  outline: 1px solid #2196F3;
 }
 
 .licence-checkbox:hover + .checkbox-label::before {
-  outline: 1px solid var(--akcent-color);
+  outline: 1px solid #2196F3;
 }
 
 .footer-section {
