@@ -1,25 +1,24 @@
 .checkbox-label{
-    @include font(12px, 1.17, 400, 0.03em);
+    @include font(2vw, 1.17, 400, 0.03em);
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     color: var(--text-color);
     
-
-
+    @media screen and(min-width:451px) {
+        @include font(12px, 1.17, 400, 0.03em);
+    }
+        
 @media screen and(min-width:1200px) {
     @include font(14px, 1.71, 400, 0.03em);
-    
-    
-}
+    }
 }
 
 
 .checkbox-label::before{
     content: '';
     width: 16px;
-    height: 16px;
-    border: 1px solid #757575;
+    height: 15px;
+    outline: 1px solid #757575;
     border-radius: 4px;
     margin-right: 7px;
 
@@ -44,16 +43,15 @@
     clip-path: inset(50%);
     margin: -1px;
     &:checked+.checkbox-label::before{
-        background-color: var(--akcent-color);
         background-image: url(../../images/icon-check.svg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
     }
     &:focus + .checkbox-label::before{
-        border: 1px solid var(--akcent-color);
+        outline: 1px solid var(--akcent-color);
     }
     &:hover + .checkbox-label::before{
-        border: 1px solid var(--akcent-color);
+        outline: 1px solid var(--akcent-color);
     }
 } 

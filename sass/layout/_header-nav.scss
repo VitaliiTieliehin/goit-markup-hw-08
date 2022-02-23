@@ -12,9 +12,12 @@
         
     }
 }
+.navigation{
+    margin-left: 93px;
+}
 .menu-nav{
 display:block;
-margin-left: 93px;
+
     .menu-nav__menu-select:not(:last-child){
         margin-right: 50px;}
     .menu-nav__menu-link.current{

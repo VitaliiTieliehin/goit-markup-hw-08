@@ -115,7 +115,6 @@ body {
 }
 
 .logo {
-  margin-left: 15px;
   padding-top: 24px;
   padding-bottom: 24px;
   color: var(--akcent-color);
@@ -160,9 +159,12 @@ body {
   }
 }
 
+.navigation {
+  margin-left: 93px;
+}
+
 .menu-nav {
   display: block;
-  margin-left: 93px;
 }
 
 .menu-nav .menu-nav__menu-select:not(:last-child) {
@@ -254,7 +256,7 @@ body {
 
 @media screen and (min-width: 769px) {
   .hero {
-    height: 600px;
+    height: 400px;
     max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -263,6 +265,22 @@ body {
 }
 
 @media screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 600px;
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero2x.jpg);
   }
@@ -771,6 +789,7 @@ body {
 
 .card-set__card:hover, .card-set__card:focus {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 300ms linear;
 }
 
 .card-set__card:hover .card-thumb__card-comment, .card-set__card:focus .card-thumb__card-comment {
@@ -1064,6 +1083,7 @@ body {
   padding: 48px;
   margin-right: 10px;
   opacity: 0;
+  transition: opacity 500ms var(--cubic-bezier), visibility 500ms var(--cubic-bezier);
 }
 
 .mobile-menu .container {
@@ -1077,7 +1097,7 @@ body {
   visibility: visible;
   margin-right: 10px;
   opacity: 1;
-  transition: opacity 500ms var(--cubic-bezier);
+  transition: opacity 500ms var(--cubic-bezier), visibility 500ms var(--cubic-bezier);
   pointer-events: auto;
 }
 
@@ -1089,6 +1109,7 @@ body {
 
 .mobile-menu-list {
   margin-top: -32px;
+  margin-bottom: 50px;
 }
 
 .mobile-menu-item {
@@ -1096,7 +1117,7 @@ body {
   line-height: 1.17;
   font-weight: 500;
   letter-spacing: 0.02em;
-  color: var(--text-color);
+  color: #212121;
   margin-top: 32px;
 }
 
@@ -1127,10 +1148,19 @@ body {
 }
 
 .mob-menu-link.tel {
-  font-size: 34px;
+  font-size: 6vw;
   line-height: 1.18;
   font-weight: 500;
   letter-spacing: 0.02em;
+}
+
+@media screen and (min-width: 480px) {
+  .mob-menu-link.tel {
+    font-size: 34px;
+    line-height: 1.18;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
 }
 
 .mob-menu-link.mail {
@@ -1248,14 +1278,22 @@ body {
 }
 
 .checkbox-label {
-  font-size: 12px;
+  font-size: 2vw;
   line-height: 1.17;
   font-weight: 400;
   letter-spacing: 0.03em;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   color: var(--text-color);
+}
+
+@media screen and (min-width: 451px) {
+  .checkbox-label {
+    font-size: 12px;
+    line-height: 1.17;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1270,8 +1308,8 @@ body {
 .checkbox-label::before {
   content: '';
   width: 16px;
-  height: 16px;
-  border: 1px solid #757575;
+  height: 15px;
+  outline: 1px solid #757575;
   border-radius: 4px;
   margin-right: 7px;
 }
@@ -1301,7 +1339,6 @@ body {
 }
 
 .licence-checkbox:checked + .checkbox-label::before {
-  background-color: var(--akcent-color);
   background-image: url(../../images/icon-check.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -1309,11 +1346,11 @@ body {
 }
 
 .licence-checkbox:focus + .checkbox-label::before {
-  border: 1px solid var(--akcent-color);
+  outline: 1px solid var(--akcent-color);
 }
 
 .licence-checkbox:hover + .checkbox-label::before {
-  border: 1px solid var(--akcent-color);
+  outline: 1px solid var(--akcent-color);
 }
 
 .footer-section {
@@ -1321,12 +1358,6 @@ body {
   padding: 60px 0;
   display: flex;
   justify-content: center;
-}
-
-@media screen and (min-width: 1200px) {
-  .footer-section {
-    padding: 94px 0;
-  }
 }
 
 @media screen and (min-width: 768px) {

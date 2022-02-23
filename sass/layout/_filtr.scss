@@ -102,6 +102,8 @@
         1px 4px 6px 0px rgba(0, 0, 0, 0.16),
         0px 4px 4px 0px rgba(0, 0, 0, 0.06),
         0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+
+        transition: box-shadow 300ms linear;
         .card-thumb__card-comment{
         transform: translateY(0);
         @media screen and(max-width:480px) {
