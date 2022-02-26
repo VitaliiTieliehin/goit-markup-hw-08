@@ -258,8 +258,7 @@ body {
   .hero {
     height: 400px;
     max-width: 1600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding: 118px 0;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero.jpg);
   }
 }
@@ -504,7 +503,7 @@ body {
 
 .team-list {
   text-align: center;
-  margin-bottom: -30px;
+  margin-top: -30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -546,7 +545,7 @@ body {
 }
 
 .team-list__item-card {
-  margin-bottom: 30px;
+  margin-top: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
@@ -1176,6 +1175,8 @@ body {
 }
 
 .mobile-menu-social-item {
+  border-right: 1px solid var(--text-color);
+  margin-left: 5px;
   font-size: 18px;
   line-height: 1.22;
   font-weight: 500;
@@ -1188,6 +1189,15 @@ body {
   transition: color 250ms var(--cubic-bezier);
 }
 
+.mobile-menu-social-item a {
+  margin-right: 5px;
+}
+
+.mobile-menu-social-item:last-child {
+  border-right: none;
+}
+
+.mobile-menu-social-item
 .mob-span {
   margin: 0 5px;
 }
@@ -1278,11 +1288,12 @@ body {
 }
 
 .checkbox-label {
-  font-size: 2vw;
+  font-size: 12px;
   line-height: 1.17;
   font-weight: 400;
   letter-spacing: 0.03em;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   color: var(--text-color);
 }
@@ -1296,15 +1307,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-@media screen and (min-width: 451px) {
-  .checkbox-label {
-    font-size: 12px;
-    line-height: 1.17;
-    font-weight: 400;
-    letter-spacing: 0.03em;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1375,12 +1377,17 @@ body {
   letter-spacing: 0.03em;
   color: var(--primeri-white-color);
   text-align: center;
+  margin-bottom: -9px;
 }
 
 @media screen and (min-width: 1200px) {
   .adres-text {
     text-align: left;
   }
+}
+
+.adres-text p {
+  margin-bottom: 9px;
 }
 
 .foot {
@@ -1394,7 +1401,7 @@ body {
 }
 
 .adres-link {
-  margin-top: 9px;
+  margin-bottom: 9px;
   color: rgba(255, 255, 255, 0.6);
   display: block;
   transition: color 250ms var(--cubic-bezier);
@@ -1498,6 +1505,7 @@ body {
 }
 
 .subscribe__input {
+  margin-bottom: 20px;
   width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1534,7 +1542,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 200px;
-  margin: 20px auto 0px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 1200px) {

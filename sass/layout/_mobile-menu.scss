@@ -109,17 +109,25 @@
 .mobile-menu-social{
     display: flex;
     flex-wrap: wrap;
+    
 }
 .mobile-menu-social-item{
+    border-right: 1px solid var(--text-color);
+    margin-left: 5px;
     @include font(18px,1.22, 500, 0.02em);
     & :hover,
     & :focus{
         color: var(--akcent-color);
         transition: color 250ms  var(--cubic-bezier);
     }
-    
-
+    & a{
+        margin-right: 5px;
+    }
+    &:last-child{
+        border-right: none;
+    }
 }
+.mobile-menu-social-item
 .mob-span{
     margin: 0 5px;
 }
