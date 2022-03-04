@@ -1348,11 +1348,11 @@ body {
 }
 
 .licence-checkbox:focus + .checkbox-label span {
-  outline: 1px solid #2196F3;
+  border: 1px solid #2196F3;
 }
 
 .licence-checkbox:hover + .checkbox-label span {
-  outline: 1px solid #2196F3;
+  border: 1px solid #2196F3;
 }
 
 .footer-section {
